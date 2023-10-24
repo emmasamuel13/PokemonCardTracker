@@ -1,0 +1,8 @@
+<h2>{{pokemon.name | uppercase}} details</h2>
+<div><span>id: </span>{{pokemon.id}}</div>
+<div><span>name: </span>{{pokemon.name}}</div>
+
+<div>
+    <label for="pokemonName">Pokemon name: </label>
+    <input id="pokemonName" [(ngModel)]="pokemon.name" placeholder="name">
+</div>
