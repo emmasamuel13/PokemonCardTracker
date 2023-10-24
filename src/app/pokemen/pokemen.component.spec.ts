@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokemonComponent } from './pokemon.component';
+import { PokemenComponent } from './pokemen.component';
 
 describe('PokemonCardComponent', () => {
-  let component: PokemonComponent;
-  let fixture: ComponentFixture<PokemonComponent>;
+  let component: PokemenComponent;
+  let fixture: ComponentFixture<PokemenComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PokemonComponent]
+      declarations: [PokemenComponent]
     });
-    fixture = TestBed.createComponent(PokemonComponent);
+    fixture = TestBed.createComponent(PokemenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
