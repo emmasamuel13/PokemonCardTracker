@@ -1,0 +1,12 @@
+<h2>{{pokemonCard.pokemonName | uppercase}} details</h2>
+<div><span>id: </span>{{pokemonCard.id}}</div>
+<div><span>Language: </span>{{pokemonCard.cardLanguage}}</div>
+<div><span>Set: </span>{{pokemonCard.setName}}</div>
+<div><span>Release date: </span>{{pokemonCard.setReleaseDate}}</div>
+<div><span>Card number: </span>{{pokemonCard.cardNumber}}/{{pokemonCard.cardsInSet}}</div>
+<div><span>Is it in my collection: </span>{{pokemonCard.inCollection}}</div>
+
+<div>
+    <label for="pokemonName">Pokemon name: </label>
+    <input id="pokemonName" [(ngModel)]="pokemonCard.pokemonName" placeholder="pokemonName">
+</div>
