@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {Pokemon} from "../pokemon";
+import { Pokemon } from "../pokemon";
+import { POKEMEN } from "../mock-pokemen";
 
 @Component({
   selector: 'app-pokemen',
@@ -7,8 +8,5 @@ import {Pokemon} from "../pokemon";
   styleUrls: ['./pokemen.component.css']
 })
 export class PokemenComponent {
-  pokemon: Pokemon = {
-    id: 1,
-    name: 'Cubone'
-  };
+  pokemen = POKEMEN;
 }
