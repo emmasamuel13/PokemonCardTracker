@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { PokemenComponent } from './pokemen/pokemen.component';
 
 import { FormsModule } from "@angular/forms";
+import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemenComponent
+    PokemenComponent,
+    PokemonDetailComponent
   ],
   imports: [
     BrowserModule,

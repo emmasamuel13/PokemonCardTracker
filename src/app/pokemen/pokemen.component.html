@@ -3,17 +3,10 @@
     <li *ngFor="let pokemon of pokemen">
         <button [class.selected]="pokemon === selectedPokemon" type="button"
                 (click)="onSelect(pokemon)">
-            <span class="pokedexNumber">{{pokemon.id}}</span>
+            <span class="pokedexNumber">{{pokemon.pokedexNumber}}</span>
             <span class="name">{{pokemon.name}}</span>
         </button>
     </li>
 </ul>
 
-<div *ngIf="selectedPokemon">
-    <h2>{{selectedPokemon.name | uppercase}} details</h2>
-    <div>id: {{selectedPokemon.id}}</div>
-    <div>
-        <label for="pokemon-name">Pokemon name: </label>
-        <input id="pokemon-name" [(ngModel)]="selectedPokemon.name" placeholder="name">
-    </div>
-</div>
+<app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
