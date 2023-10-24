@@ -1,9 +1,19 @@
 <h2>My Pokemen</h2>
 <ul class="pokemen">
     <li *ngFor="let pokemon of pokemen">
-        <button type="button">
+        <button [class.selected]="pokemon === selectedPokemon" type="button"
+                (click)="onSelect(pokemon)">
             <span class="pokedexNumber">{{pokemon.id}}</span>
             <span class="name">{{pokemon.name}}</span>
         </button>
     </li>
 </ul>
+
+<div *ngIf="selectedPokemon">
+    <h2>{{selectedPokemon.name | uppercase}} details</h2>
+    <div>id: {{selectedPokemon.id}}</div>
+    <div>
+        <label for="pokemon-name">Pokemon name: </label>
+        <input id="pokemon-name" [(ngModel)]="selectedPokemon.name" placeholder="name">
+    </div>
+</div>

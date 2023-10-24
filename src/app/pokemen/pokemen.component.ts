@@ -9,4 +9,8 @@ import { POKEMEN } from "../mock-pokemen";
 })
 export class PokemenComponent {
   pokemen = POKEMEN;
+  selectedPokemon?: Pokemon;
+  onSelect(pokemon: Pokemon): void {
+    this.selectedPokemon = pokemon;
+  }
 }
