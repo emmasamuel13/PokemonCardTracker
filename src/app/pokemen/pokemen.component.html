@@ -1,12 +1,9 @@
 <h2>My Pokemen</h2>
 <ul class="pokemen">
     <li *ngFor="let pokemon of pokemen">
-        <button [class.selected]="pokemon === selectedPokemon" type="button"
-                (click)="onSelect(pokemon)">
-            <span class="pokedexNumber">{{pokemon.pokedexNumber}}</span>
-            <span class="name">{{pokemon.name}}</span>
-        </button>
+        <a routerLink="/detail/{{pokemon.pokedexNumber}}">
+          <span class="pokedexNumber">{{pokemon.pokedexNumber}}</span>
+          {{pokemon.name}}
+        </a>
     </li>
 </ul>
-
-<app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
