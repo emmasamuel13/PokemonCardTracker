@@ -1,6 +1,6 @@
 <h2>Top Pokemen</h2>
 <div class="pokemen-menu">
-  <a *ngFor="let pokemon of pokemen" routerLink="/detail/{{pokemon.pokedexNumber}}">
+  <a *ngFor="let pokemon of pokemen" routerLink="/detail/{{pokemon.id}}">
     {{pokemon.name}}
   </a>
 </div>

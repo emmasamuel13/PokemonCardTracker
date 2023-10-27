@@ -1,8 +1,8 @@
 <h2>My Pokemen</h2>
 <ul class="pokemen">
     <li *ngFor="let pokemon of pokemen">
-        <a routerLink="/detail/{{pokemon.pokedexNumber}}">
-          <span class="pokedexNumber">{{pokemon.pokedexNumber}}</span>
+        <a routerLink="/detail/{{pokemon.id}}">
+          <span class="id">{{pokemon.id}}</span>
           {{pokemon.name}}
         </a>
     </li>

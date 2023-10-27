@@ -17,9 +17,9 @@ export class PokemonService {
     return pokemen;
   }
 
-  getPokemon(pokedexNumber: Number): Observable<Pokemon> {
-    const pokemon = POKEMEN.find(p => p.pokedexNumber === pokedexNumber)!;
-    this.messageService.add(`PokemonService: fetched pokemon pokedexNumber=${pokedexNumber}`);
+  getPokemon(id: Number): Observable<Pokemon> {
+    const pokemon = POKEMEN.find(p => p.id === id)!;
+    this.messageService.add(`PokemonService: fetched pokemon pokedexNumber=${id}`);
     return of(pokemon);
   }
 

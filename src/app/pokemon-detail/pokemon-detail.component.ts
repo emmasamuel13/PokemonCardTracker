@@ -23,8 +23,8 @@ export class PokemonDetailComponent {
   }
 
   getPokemon(): void {
-    const pokedexNumber = Number(this.route.snapshot.paramMap.get('pokedexNumber'));
-    this.pokemonService.getPokemon(pokedexNumber)
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.pokemonService.getPokemon(id)
       .subscribe(pokemon => this.pokemon = pokemon);
   }
 

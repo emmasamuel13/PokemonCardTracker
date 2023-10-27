@@ -7,7 +7,7 @@ import { PokemonDetailComponent } from "./pokemon-detail/pokemon-detail.componen
 const routes: Routes = [
   { path: 'pokemen', component: PokemenComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:pokedexNumber', component: PokemonDetailComponent },
+  { path: 'detail/:id', component: PokemonDetailComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 

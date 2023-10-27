@@ -1,7 +1,7 @@
 <div *ngIf="pokemon">
 
     <h2>{{pokemon.name | uppercase}} details</h2>
-    <div><span>PokeDex number: </span>{{pokemon.pokedexNumber}}</div>
+    <div><span>id: </span>{{pokemon.id}}</div>
     <div>
         <label for="pokemon-name">Pokemon name:</label>
         <input id="pokemon-name" [(ngModel)]="pokemon.name" placeholder="name">
