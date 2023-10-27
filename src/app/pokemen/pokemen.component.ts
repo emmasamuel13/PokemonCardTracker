@@ -9,17 +9,11 @@ import { MessageService } from "../message.service";
   styleUrls: ['./pokemen.component.css']
 })
 export class PokemenComponent implements OnInit {
-  selectedPokemon?: Pokemon;
   pokemen: Pokemon[] = [];
-  constructor(private pokemonService: PokemonService, private messageService: MessageService) {}
+  constructor(private pokemonService: PokemonService) {}
 
   ngOnInit(): void {
     this.getPokemen()
-  }
-
-  onSelect(pokemon: Pokemon): void {
-    this.selectedPokemon = pokemon;
-    this.messageService.add(`PokemenComponent: Selected pokemon pokedex number = ${pokemon.pokedexNumber}`)
   }
 
   getPokemen(): void {
